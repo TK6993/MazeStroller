@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://3sge36fu5n73"]
+[gd_scene load_steps=5 format=3 uid="uid://3mnij8fyl3ht"]
 
-[ext_resource type="Script" path="res://playerMovement.gd" id="1_0y352"]
 [ext_resource type="Script" path="res://player.gd" id="1_tmhnp"]
-[ext_resource type="Script" path="res://InputManager.gd" id="2_6vuwm"]
-[ext_resource type="PackedScene" uid="uid://bdf51sxbad4dk" path="res://charakter.tscn" id="4_4qwlo"]
+[ext_resource type="Script" path="res://player_movement.gd" id="2_y4216"]
+[ext_resource type="Texture2D" uid="uid://dbi6mivtwscc2" path="res://char_placeholder_01.png" id="3_ef7p3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7j4ut"]
 radius = 43.0
@@ -13,15 +12,13 @@ height = 112.0
 collision_mask = 2
 script = ExtResource("1_tmhnp")
 
-[node name="playerMovement" type="Node" parent="."]
-script = ExtResource("1_0y352")
-
-[node name="InputManager" type="Node" parent="."]
-script = ExtResource("2_6vuwm")
-
-[node name="charakter" parent="." instance=ExtResource("4_4qwlo")]
+[node name="PlayerMovement" type="Node" parent="."]
+script = ExtResource("2_y4216")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, 1)
 shape = SubResource("CapsuleShape2D_7j4ut")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_ef7p3")
