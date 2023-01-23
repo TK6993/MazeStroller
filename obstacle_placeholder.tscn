@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_frxkq"]
 size = Vector2(128, 128)
 
-[node name="Obstacle_placeholder" type="StaticBody2D"]
+[node name="ObstaclePlaceholder" type="StaticBody2D"]
 scale = Vector2(3, 3)
 collision_layer = 2
 

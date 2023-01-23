@@ -1,7 +1,7 @@
 extends Node
 
 var _speed: float = 109
-var _isMoving
+
 # the _currentDirection is NOT normelised
 var _currentDirection: Vector2 = Vector2.ZERO
 
@@ -12,17 +12,15 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 	
 func _setDirection(value: Vector2):
 	_currentDirection += value
+	_currentDirection = _currentDirection.normalized()
 
 	
 func _getMoveVector() -> Vector2:
 	
-	return _currentDirection.normalized() * _speed
+	return _currentDirection * _speed
 
 		
 func update(player: CharacterBody2D):
