@@ -12,4 +12,4 @@ func _physics_process(delta):
 
 	
 func updatePlayerMovement():
-	$playerMovement.update(self);
+	$PlayerMovement.update(self);
