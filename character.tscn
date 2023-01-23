@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bt6c5bxmsf156"]
+[gd_scene load_steps=2 format=3 uid="uid://blx2quibyursd"]
 
-[ext_resource type="Texture2D" uid="uid://dbi6mivtwscc2" path="res://char_placeholder_01.png" id="1_uh2hk"]
+[ext_resource type="Texture2D" uid="uid://dbi6mivtwscc2" path="res://img/char_placeholder_01.png" id="1_uxksk"]
 
 [node name="Character" type="Node2D"]
 
 [node name="CharPlaceholder01" type="Sprite2D" parent="."]
-texture = ExtResource("1_uh2hk")
+texture = ExtResource("1_uxksk")
